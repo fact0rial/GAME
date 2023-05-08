@@ -6,6 +6,7 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
+
 set(CMAKE_PREFIX_PATH "D:/Qt/6.2.4/mingw_64/lib/cmake")
 
 find_package(Qt6 COMPONENTS
@@ -14,7 +15,8 @@ find_package(Qt6 COMPONENTS
         Widgets
         REQUIRED)
 
-add_executable(GAME main.cpp MainWindow.cpp MainWindow.h)
+
+add_executable(GAME main.cpp MainWindow.cpp MainWindow.h Player.cpp Player.h Model.cpp Model.h Character.cpp Character.h Controller.cpp Controller.h Enemy.cpp Enemy.h Location.cpp Location.h EnemyBlob.cpp EnemyBlob.h sources.qrc)
 target_link_libraries(GAME
         Qt::Core
         Qt::Gui
