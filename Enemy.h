@@ -1,12 +1,12 @@
 #pragma once
 
+#include "Entity.h"
+#include <QPoint>
 #include <QPixmap>
-
-class Enemy {
+class Enemy{
 public:
-    QPixmap& getSprite() {
-    return sprite;
-}
+    QPixmap& getSprite();
+    Enemy(const QPoint& point, QPixmap map);
 protected:
     int health;
     QPixmap sprite;

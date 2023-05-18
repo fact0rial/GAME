@@ -1,17 +1,15 @@
-#pragma
+#pragma once
 
 #include "Location.h"
-#include "EnemyBlob.h"
+#include "Player.h"
 
 class Model {
 public:
-    ~Model() {
-        for (auto enemy : enemies) {
-            delete enemy;
-        }
-    }
+    Model();
+    Player* getPLayer();
 private:
-    Location *location;
-    QPoint position;
-    std::vector<Enemy *> enemies = std::vector<Enemy *>({new EnemyBlob(QPoint(0, 0))});
+    //Location *location;
+    Player player;
+    std::vector<Enemy> enemies;
+    std::vector<QRect> obstacles;
 };
