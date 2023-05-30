@@ -3,5 +3,7 @@
         <file>sources/background.png</file>
         <file>sources/character.png</file>
         <file>sources/enemy.png</file>
+        <file>sources/location1Background.png</file>
+        <file>sources/rect.png</file>
     </qresource>
 </RCC>

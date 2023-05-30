@@ -10,10 +10,14 @@ MainWindow::MainWindow() {
     model = new Model();
     controller = new Controller(model);
     view->setController(controller);
+    controller->setView(view);
+    //scene->addItem(model->getPLayer()->getSprite());
+    //view->ensureVisible(model->getPLayer()->getSprite());
+    view->setViewportUpdateMode(QGraphicsView::FullViewportUpdate);
     connect(&view->timer, &QTimer::timeout, controller, QOverload<>::of(&Controller::reposition));
     view->timer.start();
-    //view->setBackground(QPixmap(":/sources/background.png"));
-    scene->addItem(model->getPLayer()->getSprite());
+    auto loc = new Location1();
+    controller->setLocation(loc);
     view->show();
 }
 

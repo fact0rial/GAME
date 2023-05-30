@@ -4,6 +4,7 @@
 #include "AbstractController.h"
 #include <QTimer>
 #include <QKeyEvent>
+#include "Location.h"
 
 class View : public QGraphicsView {
 public:
@@ -16,6 +17,8 @@ public:
     void setController(AbstractController *);
 
     void setBackground(const QPixmap &background);
+
+    void setLocation(Location*);
 
     QTimer timer;
 

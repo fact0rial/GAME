@@ -19,7 +19,8 @@ find_package(Qt6 COMPONENTS
 add_executable(GAME main.cpp MainWindow.cpp MainWindow.h Player.cpp Player.h Model.cpp Model.h
         Character.cpp Character.h Controller.cpp Controller.h Enemy.cpp Enemy.h
         Location.cpp Location.h EnemyBlob.cpp EnemyBlob.h sources.qrc Entity.cpp Entity.h
-        allLocations.h CollisionManager.cpp CollisionManager.h View.h View.cpp AbstractController.h AbstractController.cpp)
+        allLocations.h CollisionManager.cpp CollisionManager.h View.h View.cpp AbstractController.h AbstractController.cpp
+        Location.h Location.cpp Location1.h Location1.cpp)
 target_link_libraries(GAME
         Qt::Core
         Qt::Gui
