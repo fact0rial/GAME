@@ -1,10 +1,10 @@
 #include "Enemy.h"
+Enemy::Enemy(const QPointF& pos) : Entity(pos){
+};
 
-QPixmap& Enemy::getSprite() {
-    return sprite;
-}
-
-Enemy::Enemy(const QPoint& point, QPixmap map) {
-    position = point;
-    sprite = map;
+void Enemy::loseHp() {
+    health--;
+    if (health == 0) {
+        emit enemyDeath(this);
+    }
 }

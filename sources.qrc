@@ -4,6 +4,103 @@
         <file>sources/character.png</file>
         <file>sources/enemy.png</file>
         <file>sources/location1Background.png</file>
-        <file>sources/rect.png</file>
+        <file>sources/wall.png</file>
+        <file>sources/whale.png</file>
+        <file>sources/ghost.png</file>
+        <file>sources/slime.png</file>
+        <file>sources/pixil-frame-0.png</file>
+        <file>sources/pixil-frame-1.png</file>
+        <file>sources/pixil-frame-2.png</file>
+        <file>sources/pixil-frame-3.png</file>
+        <file>sources/pixil-frame-4.png</file>
+        <file>sources/pixil-frame-5.png</file>
+        <file>sources/pixil-frame-6.png</file>
+        <file>sources/pixil-frame-7.png</file>
+        <file>sources/pixil-frame-8.png</file>
+        <file>sources/pixil-frame-9.png</file>
+        <file>sources/pixil-frame-10.png</file>
+        <file>sources/pixil-frame-11.png</file>
+        <file>sources/pixil-frame-12.png</file>
+        <file>sources/pixil-frame-13.png</file>
+        <file>sources/pixil-frame-14.png</file>
+        <file>sources/pixil-frame-15.png</file>
+        <file>sources/pixil-frame-16.png</file>
+        <file>sources/pixil-frame-17.png</file>
+        <file>sources/pixil-frame-18.png</file>
+        <file>sources/pixil-frame-19.png</file>
+        <file>sources/pixil-frame-20.png</file>
+        <file>sources/pixil-frame-21.png</file>
+        <file>sources/pixil-frame-22.png</file>
+        <file>sources/pixil-frame-23.png</file>
+        <file>sources/pixil-frame-24.png</file>
+        <file>sources/pixil-frame-25.png</file>
+        <file>sources/pixil-frame-26.png</file>
+        <file>sources/pixil-frame-27.png</file>
+        <file>sources/pixil-frame-28.png</file>
+        <file>sources/pixil-frame-29.png</file>
+        <file>sources/pixil-frame-30.png</file>
+        <file>sources/vertical attack/pixil-frame-0.png</file>
+        <file>sources/vertical attack/pixil-frame-1.png</file>
+        <file>sources/vertical attack/pixil-frame-2.png</file>
+        <file>sources/vertical attack/pixil-frame-3.png</file>
+        <file>sources/vertical attack/pixil-frame-4.png</file>
+        <file>sources/vertical attack/pixil-frame-5.png</file>
+        <file>sources/vertical attack/pixil-frame-6.png</file>
+        <file>sources/vertical attack/pixil-frame-7.png</file>
+        <file>sources/vertical attack/pixil-frame-8.png</file>
+        <file>sources/vertical attack/pixil-frame-9.png</file>
+        <file>sources/vertical attack/pixil-frame-10.png</file>
+        <file>sources/vertical attack/pixil-frame-11.png</file>
+        <file>sources/vertical attack/pixil-frame-12.png</file>
+        <file>sources/vertical attack/pixil-frame-13.png</file>
+        <file>sources/vertical attack/pixil-frame-14.png</file>
+        <file>sources/vertical attack/pixil-frame-15.png</file>
+        <file>sources/vertical attack/pixil-frame-16.png</file>
+        <file>sources/vertical attack/pixil-frame-17.png</file>
+        <file>sources/vertical attack/pixil-frame-18.png</file>
+        <file>sources/vertical attack/pixil-frame-19.png</file>
+        <file>sources/vertical attack/pixil-frame-20.png</file>
+        <file>sources/vertical attack/pixil-frame-21.png</file>
+        <file>sources/vertical attack/pixil-frame-22.png</file>
+        <file>sources/vertical attack/pixil-frame-23.png</file>
+        <file>sources/vertical attack/pixil-frame-24.png</file>
+        <file>sources/vertical attack/pixil-frame-25.png</file>
+        <file>sources/vertical attack/pixil-frame-26.png</file>
+        <file>sources/vertical attack/pixil-frame-27.png</file>
+        <file>sources/vertical attack/pixil-frame-28.png</file>
+        <file>sources/vertical attack/pixil-frame-29.png</file>
+        <file>sources/vertical attack/pixil-frame-30.png</file>
+        <file>sources/vertical attack1/pixil-frame-0.png</file>
+        <file>sources/vertical attack1/pixil-frame-1.png</file>
+        <file>sources/vertical attack1/pixil-frame-2.png</file>
+        <file>sources/vertical attack1/pixil-frame-3.png</file>
+        <file>sources/vertical attack1/pixil-frame-4.png</file>
+        <file>sources/vertical attack1/pixil-frame-5.png</file>
+        <file>sources/vertical attack1/pixil-frame-6.png</file>
+        <file>sources/vertical attack1/pixil-frame-7.png</file>
+        <file>sources/vertical attack1/pixil-frame-8.png</file>
+        <file>sources/vertical attack1/pixil-frame-9.png</file>
+        <file>sources/vertical attack1/pixil-frame-10.png</file>
+        <file>sources/vertical attack1/pixil-frame-11.png</file>
+        <file>sources/vertical attack1/pixil-frame-12.png</file>
+        <file>sources/vertical attack1/pixil-frame-13.png</file>
+        <file>sources/vertical attack1/pixil-frame-14.png</file>
+        <file>sources/vertical attack1/pixil-frame-15.png</file>
+        <file>sources/vertical attack1/pixil-frame-16.png</file>
+        <file>sources/vertical attack1/pixil-frame-17.png</file>
+        <file>sources/vertical attack1/pixil-frame-18.png</file>
+        <file>sources/vertical attack1/pixil-frame-19.png</file>
+        <file>sources/vertical attack1/pixil-frame-20.png</file>
+        <file>sources/vertical attack1/pixil-frame-21.png</file>
+        <file>sources/vertical attack1/pixil-frame-22.png</file>
+        <file>sources/vertical attack1/pixil-frame-23.png</file>
+        <file>sources/vertical attack1/pixil-frame-24.png</file>
+        <file>sources/vertical attack1/pixil-frame-25.png</file>
+        <file>sources/vertical attack1/pixil-frame-26.png</file>
+        <file>sources/vertical attack1/pixil-frame-27.png</file>
+        <file>sources/vertical attack1/pixil-frame-28.png</file>
+        <file>sources/vertical attack1/pixil-frame-29.png</file>
+        <file>sources/vertical attack1/pixil-frame-30.png</file>
+        <file>sources/menuBackground.png</file>
     </qresource>
 </RCC>

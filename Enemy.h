@@ -3,12 +3,11 @@
 #include "Entity.h"
 #include <QPoint>
 #include <QPixmap>
-class Enemy{
+class Enemy : public Entity {
+    Q_OBJECT
 public:
-    QPixmap& getSprite();
-    Enemy(const QPoint& point, QPixmap map);
-protected:
-    int health;
-    QPixmap sprite;
-    QPoint position;
+    void loseHp();
+    Enemy(const QPointF& pos);
+    signals:
+    void enemyDeath(Enemy*);
 };

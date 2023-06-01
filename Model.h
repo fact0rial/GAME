@@ -8,8 +8,10 @@ class Model {
 public:
     Model();
     Player* getPLayer();
+    std::vector<Enemy*>& getEnemies();
     void setController(AbstractController* controller);
     void setLocation(Location* loc);
+    void remove(Enemy*);
 private:
     //Location *location;
     Player* player;

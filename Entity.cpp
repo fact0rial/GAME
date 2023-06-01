@@ -4,9 +4,8 @@
 
 #include "Entity.h"
 
-Entity::Entity() : position(0,0), sprite(nullptr) {};
-
-Entity::Entity(const QPointF& pos) : position(pos), sprite(nullptr) {
+Entity::Entity(const QPointF& pos) {
+    setOffset(pos);
 }
 int Entity::getHealth() const {
     return health;
@@ -15,12 +14,6 @@ void Entity::setHealth(int num) {
     health = num;
 }
 
-const QPointF& Entity::getPosition() const {
-    return position;
-}
-void Entity::setPosition(const QPointF& point) {
-    position = point;
-};
 const QVector2D& Entity::getVelocity() const {
     return velocity;
 }
@@ -39,29 +32,34 @@ void Entity::addToVelocity(const QVector2D& point) {
     velocity = velocity + point;
 }
 
-QGraphicsPixmapItem* Entity::getSprite() {
-    return sprite;
-}
-
 void Entity::reposition() {
+    save();
     setAcceleration(defaultAcceleration);
     addToVelocity(acceleration);
-    sprite->setOffset(sprite->offset() + velocity.toPointF());
+    setOffset(offset() + velocity.toPointF());
 }
 
-Entity::~Entity() {
-    delete sprite;
-}
-void Entity::manageLineCollision(QGraphicsLineItem* line) {
-    QVector2D vector(line->line().p2()-line->line().p1());
+
+void Entity::manageLineCollision(QGraphicsLineItem *line) {
+    restore();
+    QVector2D vector(line->line().p2() - line->line().p1());
     QVector2D velocityPr = vector * QVector2D::dotProduct(velocity, vector) / vector.lengthSquared();
-    QVector2D accelerationPr = vector * QVector2D::dotProduct(acceleration, vector) / vector.lengthSquared();
-    sprite->setOffset(sprite->offset() - velocity.toPointF() + velocityPr.toPointF());
-    //addToVelocity(-acceleration + accelerationPr);
+    setVelocity(velocityPr);
+    setOffset(offset() + velocity.toPointF());
 }
 
 void Entity::backtrack() {
-    sprite->setOffset(sprite->offset() - velocity.toPointF());
-    //addToVelocity(-acceleration);
+    setOffset(offset() - velocity.toPointF());
 }
 
+void Entity::save() {
+    velocityPre = velocity;
+    accelerationPre = acceleration;
+    prePosition = offset();
+}
+
+void Entity::restore() {
+    velocity = velocityPre;
+    acceleration = accelerationPre;
+    setOffset(prePosition);
+}

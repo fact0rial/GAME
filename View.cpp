@@ -1,5 +1,4 @@
 #include "View.h"
-
 View::View(QWidget *widget) : QGraphicsView(widget) {
     timer.setInterval(10);
 
@@ -32,9 +31,12 @@ void View::setLocation(Location* loc) {
     qDebug() << int(size->x());
     setGeometry(*size);
     scene()->setSceneRect(*size);
-    setStyleSheet("QGraphicsView { border-image: url(:/sources/location1Background.png) 0 0 0 0 stretch stretch;}");
+    setStyleSheet("QGraphicsView { border-image: url(:/sources/background.png);}");
     for (auto thing: loc->getObstacles()) {
         scene()->addItem(thing);
+    }
+    for (auto enemy: loc->getEnemies()) {
+        scene()->addItem(enemy);
     }
 }
 
